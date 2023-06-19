@@ -1,0 +1,2 @@
+adi= "can"
+soyadi= "yilmaz"

@@ -1,0 +1,2 @@
+adi = "Gönenç"
+soyadi = "TEKİN"

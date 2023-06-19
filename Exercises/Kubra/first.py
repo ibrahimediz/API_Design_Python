@@ -1,0 +1,2 @@
+adi = "Kübra"
+soyadi = "Çakmak"

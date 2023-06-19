@@ -1,0 +1,2 @@
+adi = "elifnaz"
+soyadi = "erdogdu"

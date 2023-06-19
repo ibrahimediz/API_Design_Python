@@ -1,6 +1,6 @@
 liste = ["Gonenc","Berkay","Yelda","Can","Eda","Ege","Elifnaz","Kubra","Onur","Baris"]
 import os
-fileName = "first"
+fileName = "01_02_List_Dict_Tuple"
 metin = """
 """
 for item in liste:

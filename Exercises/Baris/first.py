@@ -1,0 +1,2 @@
+adi = "Baris"
+soyadi = "Perveroglu"

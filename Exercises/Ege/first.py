@@ -1,0 +1,2 @@
+adi = "ege"
+soyadi = "ekmekcioglu"

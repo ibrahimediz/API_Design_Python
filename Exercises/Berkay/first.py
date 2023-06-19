@@ -1,0 +1,2 @@
+adi= "berkay"
+soyadi= "selbes"
