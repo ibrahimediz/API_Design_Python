@@ -22,4 +22,4 @@ for i in range(26):
 else:
     print(liste[:])
 
-    sozluk = {i:i**2 for i in range(1,26) if i % 4 == 0 else}
+    sozluk = {i:i**2 for i in range(1,26) if i % 4 == 0}
