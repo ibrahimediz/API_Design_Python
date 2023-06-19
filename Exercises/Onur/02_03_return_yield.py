@@ -10,3 +10,27 @@ yukarıda yer alan değişken ve fonksiyonları kullanarak aşağıdaki kurallar
 5. en az bir noktalama işareti olmalı
 """
 
+from string import ascii_lowercase,ascii_uppercase,punctuation,digits
+from random import choice,randrange,shuffle
+
+def generatePassword():
+    password = []
+    length = randrange(8,16)
+    
+    password.append(choice(ascii_lowercase))
+    password.append(choice(ascii_uppercase))
+    password.append(choice(punctuation))
+    password.append(choice(digits))
+
+    while len(password) < length:
+        password.append(choice(ascii_lowercase + ascii_uppercase + punctuation + digits))
+
+    shuffle(password)
+    return ''.join(password)
+
+print(generatePassword())
+print(generatePassword())
+print(generatePassword())
+print(generatePassword())
+print(generatePassword())
+

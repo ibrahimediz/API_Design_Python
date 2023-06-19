@@ -9,4 +9,6 @@ yukarıda yer alan değişken ve fonksiyonları kullanarak aşağıdaki kurallar
 4. en az bir rakam olmalı
 5. en az bir noktalama işareti olmalı
 """
+import string
+password = string.ascii_uppercase + string.ascii_lowercase + string.digits + string.punctuation
 

@@ -10,3 +10,9 @@ yukarıda yer alan değişken ve fonksiyonları kullanarak aşağıdaki kurallar
 5. en az bir noktalama işareti olmalı
 """
 
+from string import ascii_lowercase,ascii_uppercase,punctuation,digits
+from random import choice
+
+import string
+generatePassword (): 
+password = []
