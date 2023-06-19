@@ -11,3 +11,9 @@ for i in range(1,26):
         liste.append(result)
         print(liste)
          
+
+
+
+
+liste = [i*i for i in range(1,26) if i %4 == 0]
+print(liste) # [16, 64, 144, 256, 400, 576]
