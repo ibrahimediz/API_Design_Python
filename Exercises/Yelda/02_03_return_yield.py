@@ -10,7 +10,24 @@ yukarıda yer alan değişken ve fonksiyonları kullanarak aşağıdaki kurallar
 5. en az bir noktalama işareti olmalı
 """
 
-
 from string import ascii_lowercase,ascii_uppercase,punctuation,digits
-from random import choice
+from random import choice,sample
+
+
+def passwordCheckOk(sifre):
+   return (any(filter(str.isupper,sifre))
+            and any(filter(str.islower,sifre))
+            and any(filter(str.isdigit,sifre))
+            and any(filter(lambda x: x in punctuation ,sifre)))
+
+def passwordGenerate(uzunluk=8):
+    sifre = ""
+    while not passwordCheckOk(sifre) and len(sifre) <= uzunluk:
+        # liste = [ascii_lowercase,ascii_uppercase,punctuation,digits]
+        # sifre += choice(choice(liste))
+        sifre = "".join(sample(ascii_lowercase+ascii_uppercase+punctuation+digits,uzunluk))
+    else:
+        return sifre
+
+print(passwordGenerate(8))
 
