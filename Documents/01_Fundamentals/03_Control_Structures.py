@@ -39,4 +39,12 @@ print(sonuc)
 # else:
 #     print("Döngü Bitti") # break ten dolayı çalışmaz
 ################################# Tek satırda for 
-liste = []
+# liste = [ i for i in range(1,26) ]
+# print(liste)
+# liste = [ i for i in range(1,26) if i % 4 == 0]
+# print(liste)
+# liste = [ i**2 for i in range(1,26) if i % 4 == 0]
+# print(liste)
+#################
+# sozluk = {i:i**2 for i in range(1,26) if i % 4 == 0}
+# print(sozluk)

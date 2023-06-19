@@ -1,4 +1,4 @@
-liste = ["Gonenc","Berkay","Yelda","Can","Eda","Ege","Elifnaz","Kubra","Onur","Baris"]
+liste = ["Gonenc","Berkay","Yelda","Can","Eda","Ege","Elifnaz","Kubra","Onur","Baris","Cevaplar"]
 import os
 fileName = "01_03_Control_Structures"
 metin = """
