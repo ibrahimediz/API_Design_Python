@@ -64,11 +64,12 @@ min,max,sum
 # print(sonuc) # ['J', 'a', 'i', 'm', 'o', 'r', 'y']
 # # print("Ali" > "ali")
 # print(ord("ş"))
-liste = ["Ali","Ayşe","Çiğdem","Kamil","Şule","Sevgi","Zeynep","Işılsu","Ceren"]
-liste.sort()
-print(liste)
+# liste = ["Ali","Ayşe","Çiğdem","Kamil","Şule","Sevgi","Zeynep","Işılsu","Ceren"]
+# liste.sort()
+# print(liste) # ['Ali', 'Ayşe', 'Ceren', 'Işılsu', 'Kamil', 'Sevgi', 'Zeynep', 'Çiğdem', 'Şule']
 ################ sorted örnek
-liste = ["Ali","Ayşe","Çiğdem","Kamil","Şule","Sevgi","Zeynep","Işılsu","Ceren"]
-alfabe = "ABCDEFGHIİJKLMNOPRESŞTUÜVYZ"
-cevrim = {x:alfabe.index(x) for x in alfabe}
-print(sorted(liste,key=lambda k:cevrim.get(k[0])))
+# liste = ["Ali","Ayşe","Çiğdem","Kamil","Şule","Sevgi","Zeynep","Işılsu","Ceren"]
+# alfabe = "ABCÇDEFGHIİJKLMNOPRESŞTUÜVYZ"
+# cevrim = {x:alfabe.index(x) for x in alfabe}
+# print(cevrim)
+# print(sorted(liste,key=lambda k:cevrim.get(k[0]))) # ['Ali', 'Ayşe', 'Ceren', 'Çiğdem', 'Işılsu', 'Kamil', 'Sevgi', 'Şule', 'Zeynep']

@@ -83,3 +83,15 @@ print(list(map(ord, str1)))
 
 sozluk = {"5":"Ali","6":"Veli","3":"Fatma","2":"Ayşe"}
 print(dict(sorted(sozluk.items())))
+
+
+
+
+liste = ["Ali","Ayşe","Çiğdem","Kamil","Şule","Sevgi","Zeynep","Işılsu","Ceren"]
+alfabe = "ABCDEFGHIİJKLMNOPRESŞTUÜVYZ"
+cevrim = {x:alfabe.index(x) for x in alfabe}
+siralama=dict(enumerate(alfabe))
+print(*siralama.items())
+print(dict(sorted(liste, key=siralama.items())))
+
+print(sorted(liste,key=lambda k:cevrim.get(k[0])))
