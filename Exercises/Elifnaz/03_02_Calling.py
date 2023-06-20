@@ -12,3 +12,5 @@ import sys
 sys.path.append("/workspace/API_Design_Python/Documents/03_Modules_And_Packages/Paket")
 from paket2 import Sinif2
 
+obj = Sinif2()
+print(obj.b)
