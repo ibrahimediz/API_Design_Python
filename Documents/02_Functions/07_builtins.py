@@ -18,9 +18,10 @@ min,max,sum
 # liste = [1,2,3,4,5,6]
 # def fonk(a):
 #     return a**3
-# print(map(fonk,liste)) # <map object at 0x7f4739f9b7f0>
-# print(*map(fonk,liste))
-# print(list(map(fonk,liste)))
+# kup = lambda x:x**3
+# print(map(lambda x:x**3,liste)) # <map object at 0x7f4739f9b7f0>
+# print(*map(lambda x:x**3,liste))
+# print(list(map(lambda x:x**3,liste)))
 ################ örnek map kullanımı
 # tckimlik = "10000000146"
 # liste = list(tckimlik)
@@ -45,3 +46,21 @@ min,max,sum
 # print(enumerate(liste)) # <enumerate object at 0x7fb9bcc5b0b0>
 # print(*enumerate(liste))  # (0, 'Ali') (1, 'Ayşe') (2, 'Fatma') (3, 'Veli')
 # print(list(enumerate(liste))) # [(0, 'Ali'), (1, 'Ayşe'), (2, 'Fatma'), (3, 'Veli')]
+############### any,all
+# liste1 = ["",1,[],{},set(),()]
+# liste2 = [1,1,1,1,1,1,1,1,0,1,1]
+# print(all(liste2))
+# print(any(liste1))
+############## sorted,reversed
+liste = [1,2,6,4,3,2,3,4,5,6]
+liste.sort()
+print(liste)
+metin = "Jamiryo"
+sonuc = list(metin)
+sonuc.sort()
+print(sonuc) # ['J', 'a', 'i', 'm', 'o', 'r', 'y']
+# print("Ali" > "ali")
+# print(ord("ş"))
+liste = ["Ali","Ayşe","Çiğdem","Kamil","Şule","Sevgi","Zeynep","Işılsu","Ceren"]
+liste.sort()
+print(liste)

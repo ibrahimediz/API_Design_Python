@@ -29,21 +29,21 @@ def validateTCKN(tckn):
 
     odd = 0
     even = 0
-    for i in range(0,8):
+    for i in range(9):
         if((i+1)%2==1):
-            odd=+int(tckn[i])
+            odd+=int(tckn[i])
         else:
-            even=+int(tckn[i])
+            even+=int(tckn[i])
             
-    if(((odd*7)-even)%10 != tckn[9]):
+    if(((odd*7)-even)%10 != int(tckn[9])):
         print("Forth Rule Break")
         return False
 
     total = 0
-    for i in range(0,9):
-        total=+tckn[i]
+    for i in range(10):
+        total+=int(tckn[i])
 
-    if(total%10 != tckn[10]):
+    if(total%10 != int(tckn[10])):
         print("Fifth Rule Break")
         return False
     
@@ -51,3 +51,8 @@ def validateTCKN(tckn):
 
 print(validateTCKN("10000000146"))
 print(validateTCKN("12345678910"))
+"""
+1. map fonksiyonu ile verilen listedeki sayıların üç katını liste halinde ekrana yazdırınız => [25,76,45,38]
+2. map fonksiyonu ile verilen metindeki karakterilerin ASCII kodunu liste halinde ekrana yazdırınız => "Dijital"
+3. Verilen sözlükte yer alan anahtarlara göre sözlüğü tekrar sıralayınız => sozluk = {"5":"Ali","6":"Veli","3":"Fatma","2":"Ayşe"} 
+"""

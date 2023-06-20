@@ -32,10 +32,11 @@ print(int(a)+5)
 liste = list(map(int,liste))
 print(sum(liste))
 #############################
-liste = ["Ali","Ayşe","Fatma","Veli"]
-# notlar = [50,60,100,75]
-# print(zip(liste,notlar)) # <zip object at 0x7fc6eb1d8240>
-# print(*zip(liste,notlar)) # ('Ali', 50) ('Ayşe', 60) ('Fatma', 100) ('Veli', 75)
+liste = ["Ali","Ayşe","Fatma","Veli","Kim"]
+notlar = [50,60,100,75,200,100]
+print(zip(liste,notlar)) # <zip object at 0x7fc6eb1d8240>
+print(*zip(liste,notlar,strict=True)) # ('Ali', 50) ('Ayşe', 60) ('Fatma', 100) ('Veli', 75)
+print(*zip(*zip(liste,notlar))) # ('Ali', 50) ('Ayşe', 60) ('Fatma', 100) ('Veli', 75)
 
 
 """
@@ -48,13 +49,27 @@ Kurallar:
 * 1. 2. 3. 4. 5. 6. 7. 8. 9. ve 10. hanelerin toplamından elde edilen sonucun 10'a bölümünden kalan, yani Mod10'u bize 11. haneyi verir.
 Kurallar http://www.kodaman.org/yazi/t-c-kimlik-no-algoritmasi adresinden alınmıştır.
 """
+#######################################
+liste1 = ["",0,[],{},set(),()]
+liste2 = [1,1,1,1,1,1,1,1,0,1,1]
+print(all(liste2))
+print(any(liste1))
+print(all(liste1))
+print(any(liste2))
+#########################################
 
+liste = [1,2,6,4,3,2,3,4,5,6]
+liste.sort()
+print(liste)
+metin = "Jamiryo"
+sonuc = list(metin)
+sonuc.sort()
+print(sonuc) # ['J', 'a', 'i', 'm', 'o', 'r', 'y']
+print("b" > "a")
+print(ord("ş"))
 
-def IDCriteria(Id):
-    len(Id)
-    Id[0] != "0"
-    filter((str.isdigit, Id))
-
-    
-
-def checkID(TCId):
+"""
+1. map fonksiyonu ile verilen listedeki sayıların üç katını liste halinde ekrana yazdırınız => [25,76,45,38]
+2. map fonksiyonu ile verilen metindeki karakterilerin ASCII kodunu liste halinde ekrana yazdırınız => "Dijital"
+3. Verilen sözlükte yer alan anahtarlara göre sözlüğü tekrar sıralayınız => sozluk = {"5":"Ali","6":"Veli","3":"Fatma","2":"Ayşe"} 
+"""

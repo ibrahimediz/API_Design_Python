@@ -23,8 +23,8 @@
 # fonk(5) # calling
 
 ##################
-# def fonk(a,b,c=0):
-#     print(a+b+c)
+def fonk(a,b,c=0):
+    print(a+b+c)
 
 
 # fonk(2,3)
