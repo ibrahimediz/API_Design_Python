@@ -1,9 +1,3 @@
-import sys
-print(*sys.path,sep="\n")
-sys.path.append("/workspace/API_Design_Python/Documents/03_Moduls_And_Packages/Paket")
-
-
-
 """
 /workspace/API_Design_Python/Documents/03_Moduls_And_Packages/Paket
 1. Yukarıdaki adresi sys.path listesini kullanarak kütüphane adresleri listesine ekleyiniz
@@ -12,9 +6,9 @@ Sinif2 sınıfını çağırıp aşağıdaki satırları kullanarak bir nesne ol
 obj = Sinif2()
 obj.b
 """
+import sys
+sys.path.append("/workspace/API_Design_Python/Documents/03_Moduls_And_Packages/Paket")
+from paket2 import Sinif2
 
-import Paket
-from Paket.paket2 import Sinif2
-from Paket import paket2
 obj = Sinif2()
 print(obj.b)

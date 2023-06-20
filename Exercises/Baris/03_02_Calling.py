@@ -9,6 +9,8 @@ obj = Sinif2()
 obj.b
 """
 import sys
-import Paket
+sys.path.append("/workspace/API_Design_Python/Documents/03_Moduls_And_Packages/Paket")
+from Paket.paket2 import Sinif2
 
-sys.path.append("/workspace/API_Design_Python/Documents/02_Functions")
+obj = Sinif2()
+print(obj.b)
