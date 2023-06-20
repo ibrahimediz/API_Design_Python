@@ -73,3 +73,11 @@ min,max,sum
 # cevrim = {x:alfabe.index(x) for x in alfabe}
 # print(cevrim)
 # print(sorted(liste,key=lambda k:cevrim.get(k[0]))) # ['Ali', 'Ayşe', 'Ceren', 'Çiğdem', 'Işılsu', 'Kamil', 'Sevgi', 'Şule', 'Zeynep']
+################# exec,eval
+metin = """
+for i in range(5):
+    print(i)
+"""
+exec(metin) # execute
+# print(a)
+print(eval("2+5")) # evaluate

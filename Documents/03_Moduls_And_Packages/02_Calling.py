@@ -3,6 +3,9 @@ print(*sys.path,sep="\n")
 sys.path.append("/workspace/API_Design_Python/Documents/02_Functions")
 from ornek import ornekFonk
 ornekFonk()
+import ornek
+print(ornek.__doc__)
+
 
 # /workspace/API_Design_Python/Documents/03_Moduls_And_Packages
 import Paket
