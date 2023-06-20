@@ -16,5 +16,5 @@ obj.b
 import Paket
 from Paket.paket2 import Sinif2
 from Paket import paket2
-obj = paket2()
+obj = Sinif2()
 print(obj.b)

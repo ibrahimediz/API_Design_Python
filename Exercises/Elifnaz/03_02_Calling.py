@@ -8,3 +8,5 @@ Sinif2 sınıfını çağırıp aşağıdaki satırları kullanarak bir nesne ol
 obj = Sinif2()
 obj.b
 """
+import sys
+sys.path.append("")

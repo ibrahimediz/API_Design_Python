@@ -14,4 +14,4 @@ print(*sys.path,sep="\n")
 sys.path.append("/workspace/API_Design_Python/Documents/03_Moduls_And_Packages/Paket")
 print(*sys.path,sep="\n")
 
-from paket2.
+import paket2 as 

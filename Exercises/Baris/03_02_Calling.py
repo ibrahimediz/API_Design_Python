@@ -10,3 +10,5 @@ obj.b
 """
 import sys
 import Paket
+
+sys.path.append("/workspace/API_Design_Python/Documents/02_Functions")
