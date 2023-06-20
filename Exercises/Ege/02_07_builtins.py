@@ -11,8 +11,8 @@ Kurallar:
 Kurallar http://www.kodaman.org/yazi/t-c-kimlik-no-algoritmasi adresinden alınmıştır.
 """
 
-def tc_validation(a):
-    n = 11
+# def tc_validation(a):
+#     n = 11
 
 
 
@@ -20,15 +20,32 @@ def tc_validation(a):
 
 
 
-sonuc = tc_validation(a)
-if sonuc == True:
-    print("Correct")
+# sonuc = tc_validation(a)
+# if sonuc == True:
+#     print("Correct")
 
-else: 
-    print("False!")
+# else: 
+#     print("False!")
 
 """
 1. map fonksiyonu ile verilen listedeki sayıların üç katını liste halinde ekrana yazdırınız => [25,76,45,38]
 2. map fonksiyonu ile verilen metindeki karakterilerin ASCII kodunu liste halinde ekrana yazdırınız => "Dijital"
 3. Verilen sözlükte yer alan anahtarlara göre sözlüğü tekrar sıralayınız => sozluk = {"5":"Ali","6":"Veli","3":"Fatma","2":"Ayşe"} 
 """
+
+
+#1
+liste = [25,76,45,38]
+print(list(map(lambda x:x*3,liste)))
+
+#2
+kelime = "Dijital"
+print(list(map(lambda x:ord(x),kelime)))
+
+#3 Sort by key
+sozluk = {"5":"Ali","6":"Veli","3":"Fatma","2":"Ayşe"}
+print(dict(sorted(sozluk.items())))
+
+#3 Sort by value
+sozluk = {"5":"Ali","6":"Veli","3":"Fatma","2":"Ayşe"}
+print(dict(sorted(sozluk.items(), key=lambda item: item[1])))

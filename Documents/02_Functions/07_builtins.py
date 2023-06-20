@@ -38,6 +38,9 @@ min,max,sum
 # print(*zip(liste,notlar)) # ('Ali', 50) ('Ayşe', 60) ('Fatma', 100) ('Veli', 75)
 # print(list(zip(liste,notlar))) # [('Ali', 50), ('Ayşe', 60), ('Fatma', 100), ('Veli', 75)]
 # print(*zip(*zip(liste,notlar))) #  ('Ali', 'Ayşe', 'Fatma', 'Veli') (50, 60, 100, 75)
+# # --------------------------
+# print(dict(zip(liste,notlar)))
+# # --------------------------
 # sozluk = {}
 # sozluk.update(zip(liste,notlar))
 # print(sozluk) # {'Ali': 50, 'Ayşe': 60, 'Fatma': 100, 'Veli': 75}
@@ -52,15 +55,20 @@ min,max,sum
 # print(all(liste2))
 # print(any(liste1))
 ############## sorted,reversed
-liste = [1,2,6,4,3,2,3,4,5,6]
-liste.sort()
-print(liste)
-metin = "Jamiryo"
-sonuc = list(metin)
-sonuc.sort()
-print(sonuc) # ['J', 'a', 'i', 'm', 'o', 'r', 'y']
-# print("Ali" > "ali")
+# liste = [1,2,6,4,3,2,3,4,5,6]
+# liste.sort()
+# print(liste)
+# metin = "Jamiryo"
+# sonuc = list(metin)
+# sonuc.sort()
+# print(sonuc) # ['J', 'a', 'i', 'm', 'o', 'r', 'y']
+# # print("Ali" > "ali")
 # print(ord("ş"))
 liste = ["Ali","Ayşe","Çiğdem","Kamil","Şule","Sevgi","Zeynep","Işılsu","Ceren"]
 liste.sort()
 print(liste)
+################ sorted örnek
+liste = ["Ali","Ayşe","Çiğdem","Kamil","Şule","Sevgi","Zeynep","Işılsu","Ceren"]
+alfabe = "ABCDEFGHIİJKLMNOPRESŞTUÜVYZ"
+cevrim = {x:alfabe.index(x) for x in alfabe}
+print(sorted(liste,key=lambda k:cevrim.get(k[0])))

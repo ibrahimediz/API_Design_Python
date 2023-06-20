@@ -11,7 +11,7 @@ Kurallar:
 Kurallar http://www.kodaman.org/yazi/t-c-kimlik-no-algoritmasi adresinden alınmıştır.
 """
 
-def tcknvalidation (X):
+# def tcknvalidation (X):
     
 
 """
@@ -19,3 +19,10 @@ def tcknvalidation (X):
 2. map fonksiyonu ile verilen metindeki karakterilerin ASCII kodunu liste halinde ekrana yazdırınız => "Dijital"
 3. Verilen sözlükte yer alan anahtarlara göre sözlüğü tekrar sıralayınız => sozluk = {"5":"Ali","6":"Veli","3":"Fatma","2":"Ayşe"} 
 """
+
+x = [25,76,45,38]
+y = lambda x: x*3
+
+print (list (y,x))
+
+

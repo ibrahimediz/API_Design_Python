@@ -56,3 +56,11 @@ print(validateTCKN("12345678910"))
 2. map fonksiyonu ile verilen metindeki karakterilerin ASCII kodunu liste halinde ekrana yazdırınız => "Dijital"
 3. Verilen sözlükte yer alan anahtarlara göre sözlüğü tekrar sıralayınız => sozluk = {"5":"Ali","6":"Veli","3":"Fatma","2":"Ayşe"} 
 """
+
+
+numbers = [25, 76, 45, 38]
+print(list(map(lambda x: x*3, numbers)))
+text = "Dijital"
+print(list(map(lambda x: ord(x), text)))
+names = {"5":"Ali", "6":"Veli", "3": "Fatma", "2":"Ayşe"}
+print(dict(sorted(names.items())))

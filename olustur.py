@@ -15,3 +15,5 @@ for item in liste:
     dosya = open(os.sep.join((fPath,f"{fileName}.py")),"a+")
     dosya.write(metin)
 
+
+

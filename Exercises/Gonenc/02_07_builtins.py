@@ -16,3 +16,14 @@ Kurallar http://www.kodaman.org/yazi/t-c-kimlik-no-algoritmasi adresinden alınm
 2. map fonksiyonu ile verilen metindeki karakterilerin ASCII kodunu liste halinde ekrana yazdırınız => "Dijital"
 3. Verilen sözlükte yer alan anahtarlara göre sözlüğü tekrar sıralayınız => sozluk = {"5":"Ali","6":"Veli","3":"Fatma","2":"Ayşe"} 
 """
+#1
+liste = [25,76,45,37]
+print(list(map(lambda x:x*3,liste)))
+
+#2
+kelime = "Digital"
+print(list(map(lambda x:ord(x),kelime)))
+
+#3
+sozluk =("5":"Ali","6":"Veli","3":"Fatma","2":"Ayşe"")
+

@@ -73,3 +73,13 @@ print(ord("ş"))
 2. map fonksiyonu ile verilen metindeki karakterilerin ASCII kodunu liste halinde ekrana yazdırınız => "Dijital"
 3. Verilen sözlükte yer alan anahtarlara göre sözlüğü tekrar sıralayınız => sozluk = {"5":"Ali","6":"Veli","3":"Fatma","2":"Ayşe"} 
 """
+
+list1 = [25,76,45,38]
+print(*map((lambda x:x**3),map(int,list1)))
+
+str1 = "Dijital"
+print(list(map(ord, str1)))
+
+
+sozluk = {"5":"Ali","6":"Veli","3":"Fatma","2":"Ayşe"}
+print(dict(sorted(sozluk.items())))

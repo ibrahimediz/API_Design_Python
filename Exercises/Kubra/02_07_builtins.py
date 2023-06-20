@@ -11,12 +11,23 @@ Kurallar:
 Kurallar http://www.kodaman.org/yazi/t-c-kimlik-no-algoritmasi adresinden alınmıştır.
 """
 
-def kontrol():
-    TC="10000000146"
-
 
 """
 1. map fonksiyonu ile verilen listedeki sayıların üç katını liste halinde ekrana yazdırınız => [25,76,45,38]
 2. map fonksiyonu ile verilen metindeki karakterilerin ASCII kodunu liste halinde ekrana yazdırınız => "Dijital"
 3. Verilen sözlükte yer alan anahtarlara göre sözlüğü tekrar sıralayınız => sozluk = {"5":"Ali","6":"Veli","3":"Fatma","2":"Ayşe"} 
 """
+
+
+def multiply(n):
+    return n*3
+ 
+numbers = [25,76,45,38]
+result = map(multiply, numbers)
+print(list(result))
+
+
+string = "Dijital"
+result = map(lambda x:ord(x),string)
+print(list(result))
+

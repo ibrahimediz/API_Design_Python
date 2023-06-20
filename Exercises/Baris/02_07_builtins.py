@@ -20,3 +20,24 @@ def tc_validation(tc):
 2. map fonksiyonu ile verilen metindeki karakterilerin ASCII kodunu liste halinde ekrana yazdırınız => "Dijital"
 3. Verilen sözlükte yer alan anahtarlara göre sözlüğü tekrar sıralayınız => sozluk = {"5":"Ali","6":"Veli","3":"Fatma","2":"Ayşe"} 
 """
+a = [25,76,45,38]
+
+b = lambda x: x*3
+
+result = map(b,a)
+
+for i in result:
+    print(i)
+
+####################################
+
+c = "Dijital"
+
+
+d = list(map(ord,c))
+
+for i in b:
+    print(i)
+
+
+
