@@ -9,3 +9,4 @@ obj = Sinif2()
 obj.b
 """
 import sys
+import Paket

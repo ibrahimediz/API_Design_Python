@@ -1,4 +1,8 @@
 import sys
+print(*sys.path,sep="\n")
+sys.path.append("/workspace/API_Design_Python/Documents/03_Moduls_And_Packages/Paket")
+
+
 
 """
 /workspace/API_Design_Python/Documents/03_Moduls_And_Packages/Paket
@@ -8,3 +12,9 @@ Sinif2 sınıfını çağırıp aşağıdaki satırları kullanarak bir nesne ol
 obj = Sinif2()
 obj.b
 """
+
+import Paket
+from Paket.paket2 import Sinif2
+from Paket import paket2
+obj = paket2()
+print(obj.b)

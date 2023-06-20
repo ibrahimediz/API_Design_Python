@@ -8,3 +8,10 @@ Sinif2 sınıfını çağırıp aşağıdaki satırları kullanarak bir nesne ol
 obj = Sinif2()
 obj.b
 """
+
+import sys
+print(*sys.path,sep="\n")
+sys.path.append("/workspace/API_Design_Python/Documents/03_Moduls_And_Packages/Paket")
+print(*sys.path,sep="\n")
+
+from paket2.

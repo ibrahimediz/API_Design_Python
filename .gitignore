@@ -1,3 +1,4 @@
 env
 Ortam
 __pycache__
+.vscode
